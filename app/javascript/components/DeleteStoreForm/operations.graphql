@@ -1,0 +1,11 @@
+mutation DeleteStoreMutation(
+  $id: ID!
+) {
+  deleteStore(
+    id: $id
+  ) {
+    store {
+      id
+    }
+  }
+}

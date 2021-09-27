@@ -1,0 +1,18 @@
+query ShopQuery {
+  products {
+    id
+    name
+    description
+    price
+  }
+}
+
+query StoreQuery {
+  stores {
+    id
+    name
+    address
+  }
+}
+
+

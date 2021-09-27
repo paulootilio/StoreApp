@@ -1,0 +1,15 @@
+mutation AddProductStoreMutation(
+  $stock: Integer!
+  $product_id: Integer
+  $store_id: Integer
+) {
+  addProductStore(stock: $stock, product_id: $product_id, store_id: $product_id) {
+    stock_item {
+      id
+      stock
+      product_id
+      store_id
+    }
+  }
+}
+

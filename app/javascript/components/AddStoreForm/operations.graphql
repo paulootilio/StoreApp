@@ -1,0 +1,12 @@
+mutation AddStoreMutation(
+  $name: String!
+  $address: String
+) {
+  addStore(name: $name, address: $address) {
+    store {
+      id
+      name
+      address
+    }
+  }
+}

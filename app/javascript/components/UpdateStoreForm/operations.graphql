@@ -1,0 +1,17 @@
+mutation UpdateStoreMutation(
+  $id: ID!
+  $name: String!
+  $address: String
+) {
+  updateStore(
+    id: $id
+    name: $name
+    address: $address
+  ) {
+    store {
+      id
+      name
+      address
+    }
+  }
+}
